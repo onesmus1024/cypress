@@ -88,6 +88,7 @@
     html-webpack-plugin-4 "npm:html-webpack-plugin@^4"
     html-webpack-plugin-5 "npm:html-webpack-plugin@^5"
     local-pkg "0.4.1"
+    semver "^7.5.3"
     speed-measure-webpack-plugin "1.4.2"
     tslib "^2.3.1"
     webpack-dev-server "^4.7.4"
@@ -2220,10 +2221,9 @@ fs-extra@^4.0.3:
     jsonfile "^4.0.0"
     universalify "^0.1.0"
 
-fs-monkey@1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/fs-monkey/-/fs-monkey-1.0.3.tgz#ae3ac92d53bb328efe0e9a1d9541f6ad8d48e2d3"
-  integrity "sha1-rjrJLVO7Mo7+DpodlUH2rY1I4tM= sha512-cybjIfiiE+pTWicSCLFHSrXZ6EilF30oh91FDP9S2B051prEa7QWfrVTQm10/dDpswBDXZugPa1Ogu8Yh+HV0Q=="
+fs-monkey@^1.0.4:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/fs-monkey/-/fs-monkey-1.0.5.tgz#fe450175f0db0d7ea758102e1d84096acb925788"
 
 fs.realpath@^1.0.0:
   version "1.0.0"
@@ -3183,12 +3183,11 @@ media-typer@0.3.0:
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
   integrity "sha1-hxDXrwqmJvj/+hzgAWhUUmMlV0g= sha512-dq+qelQ9akHpcOl/gUVRTxVIOkAJ1wR3QAvb4RsVjS8oVoFjDGTc679wJYmUmknUF5HwMLOgb5O+a3KxfWapPQ=="
 
-memfs@^3.4.1:
-  version "3.4.1"
-  resolved "https://registry.yarnpkg.com/memfs/-/memfs-3.4.1.tgz#b78092f466a0dce054d63d39275b24c71d3f1305"
-  integrity "sha1-t4CS9Gag3OBU1j05J1skxx0/EwU= sha512-1c9VPVvW5P7I85c35zAdEr1TD5+F11IToIHIlrVIcflfnzPkJa0ZoYEoEdYDP8KgPFoSZ/opDrUsAoZWym3mtw=="
+memfs@^3.4.3:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/memfs/-/memfs-3.6.0.tgz#d7a2110f86f79dd950a8b6df6d57bc984aa185f6"
   dependencies:
-    fs-monkey "1.0.3"
+    fs-monkey "^1.0.4"
 
 merge-descriptors@1.0.1:
   version "1.0.1"
@@ -4324,6 +4323,12 @@ semver@^7.3.5:
   dependencies:
     lru-cache "^6.0.0"
 
+semver@^7.5.3:
+  version "7.6.0"
+  resolved "https://registry.yarnpkg.com/semver/-/semver-7.6.0.tgz#1a46a4db4bffcccd97b743b5005c8325f23d4e2d"
+  dependencies:
+    lru-cache "^6.0.0"
+
 send@0.17.2:
   version "0.17.2"
   resolved "https://registry.yarnpkg.com/send/-/send-0.17.2.tgz#926622f76601c41808012c8bf1688fe3906f7820"
@@ -5118,12 +5123,11 @@ webidl-conversions@^4.0.2:
   integrity "sha1-qFWYCx8LazWbodXZ+zmulB+qY60= sha512-YQ+BmxuTgd6UXZW3+ICGfyqRyHXVlD5GtQr5+qjiNW7bF0cqrzX500HVXPBOvgXb5YnzDd+h0zqyv61KUD7+Sg=="
 
 webpack-dev-middleware@^5.3.1:
-  version "5.3.1"
-  resolved "https://registry.yarnpkg.com/webpack-dev-middleware/-/webpack-dev-middleware-5.3.1.tgz#aa079a8dedd7e58bfeab358a9af7dab304cee57f"
-  integrity "sha1-qgeaje3X5Yv+qzWKmvfaswTO5X8= sha512-81EujCKkyles2wphtdrnPg/QqegC/AtqNH//mQkBYSMqwFVCQrxM6ktB2O/SPlZy7LqeEfTbV3cZARGQz6umhg=="
+  version "5.3.4"
+  resolved "https://registry.yarnpkg.com/webpack-dev-middleware/-/webpack-dev-middleware-5.3.4.tgz#eb7b39281cbce10e104eb2b8bf2b63fce49a3517"
   dependencies:
     colorette "^2.0.10"
-    memfs "^3.4.1"
+    memfs "^3.4.3"
     mime-types "^2.1.31"
     range-parser "^1.2.1"
     schema-utils "^4.0.0"
